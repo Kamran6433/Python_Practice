@@ -9,7 +9,11 @@ print(coordinates)
 names = ("Harry", "Kamran")
 print(names)
 
-mix = (False, True, 89, 9.999, "Pelitia")
+mix = (False, True, 89, 9.999, "Pelitia", False, False)
 print(mix)
 
-# you're also able to access all the indexes of the tuple however you cannot MODIFY the tuple at any stage.
+# you're also able to access all the indexes of the tuple using [] however you cannot MODIFY the tuple at any stage.
+
+# the ONLY two functions you can use with tuples are:
+print(mix.index(89))
+print(mix.count(False))
