@@ -1,5 +1,5 @@
 nums = [9, 87, 22, 213, 0, 99, 73]
-print(nums[0])
+print(nums[0:]) # This colon simply means the rest.
 
 strings = ["Kamran", "Hello", "Attack On Titan"]
 print(strings[2])
@@ -32,6 +32,14 @@ print(nums.copy())
 # This function inserts a new value to a given index (index 1, in this example, is now 11010).
 nums.insert(1, 11010)
 print(nums)
+
+# This function allows the user to add multiple elements to a list.
+nums.extend([888, 777, 999])
+print(nums)
+
+print(min(nums))
+print(max(nums))
+print(sum(nums))
 
 # This function removes a given value in the list.
 nums.remove(9)
