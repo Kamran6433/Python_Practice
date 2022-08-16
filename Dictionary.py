@@ -34,3 +34,19 @@ print(thisdict.values())
 
 # The items() method will return each item in a dictionary, as tuples in a list.
 print(thisdict.items())
+
+
+# To update elements in the dictionary, you cna use the update() method or simply access the key and change the value.
+thisdict["year"] = 2018
+# or by using the update() function and passing a dictionary as an argument using {}. The update() method will
+# replace the given key with the new value but if there's no key that matches it will simply add it on.
+thisdict.update({"year": 2000})
+thisdict.update({"Hello": "World"})
+print(thisdict)
+
+# Nested dictionaries exist as well.
+nestedDict = {
+    "thisdict": thisdict,
+    "dict": dict
+}
+print(nestedDict)
