@@ -26,3 +26,11 @@ for i in range(0, 100, 5): # range(Start, End, Incrementation)
 else:
     print("Finished looping!")
 # We're also able to add an else statement to execute code when the loop is completed.
+
+
+# Last but not least, we can nest for loops for complex or multidimensional iterations.
+simpleList1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+simpleList2 = [10, 20, 30, 40, 50]
+for x in simpleList1:
+    for y in simpleList2:
+        print(x, y)
