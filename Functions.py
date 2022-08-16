@@ -13,3 +13,12 @@ print(sum(67, 90))
 
 # Functions are also built into languages such as the functions that are used for lists in Lists.py, and they make
 # everything a lot more efficient and save a lot of time.
+
+def raiseToThePower(base_number, power_number):
+    result = 1
+    for i in range(power_number):
+        result = result * base_number
+    return result
+
+
+print(raiseToThePower(5, 2))
