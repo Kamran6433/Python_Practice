@@ -34,3 +34,15 @@ simpleList2 = [10, 20, 30, 40, 50]
 for x in simpleList1:
     for y in simpleList2:
         print(x, y)
+
+
+# Testing 2D lists.
+complexList = [
+    ["Haribo", True, 99.999],
+    [7, "A", False],
+    [True, True, "Why?"]
+]
+
+for row in complexList:
+    for column in row:
+        print(column)
