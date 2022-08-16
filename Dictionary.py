@@ -50,3 +50,13 @@ nestedDict = {
     "dict": dict
 }
 print(nestedDict)
+
+print("----------POP-----------")
+# This method will remove the desired key and value pair from the dictionary.
+dict.pop(3)
+print(dict)
+
+print("----------POPITEM-----------")
+# This method will remove the last pair of the dictionary.
+dict.popitem()
+print(dict)
