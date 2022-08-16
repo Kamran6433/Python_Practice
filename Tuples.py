@@ -17,3 +17,29 @@ print(mix)
 # the ONLY two functions you can use with tuples are:
 print(mix.index(89))
 print(mix.count(False))
+
+# checking to see if 9.999 is contained in a tuple.
+if 9.999 in mix:
+    print("9.999 is in the tuple called mix")
+
+
+# Since tuples are immutable, they cannot be changed however there is a workaround.
+# You're able to turn the tuple into a list and change the elements before changing it back to a tuple.
+x = (1, 2, 3, 4)
+y = list(x)
+y[0] = 10
+x = tuple(y)
+print(x)
+
+# You're also able to join tuples together.
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple += y
+
+print(thistuple)
+
+# You can also multiply tuples to make a larger tuple.
+fruits = ("apple", "banana", "cherry", "carrot")
+mytuple = fruits * 2
+
+print(mytuple)
