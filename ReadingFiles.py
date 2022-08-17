@@ -15,11 +15,17 @@ try:
     except:
         print("Something went wrong reading the file.")
     finally:
-        spotifyList.close()
+        spotifyList.close()  # Its good practice to always close the file you opened.
 except:
     print("Something went wrong opening the file.")
 
-# for i in spotifyList.readlines():
-#     print(i)
 
+spotifyList = open("Spotify.txt", "r")
+for i in spotifyList.read():  # This will print every single letter in every single item one by one (VERY LONG).
+    print(i)
 
+for i in spotifyList.readline():  # This will print every letter one by one of the first item in the file.
+    print(i)
+
+for i in spotifyList.readlines():  # this will print every item one by one.
+    print(i)
