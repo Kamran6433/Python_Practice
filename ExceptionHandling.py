@@ -33,3 +33,13 @@ finally:
 # The ELSE block lets you execute code when there is no error.
 #
 # The FINALLY block lets you execute code, regardless of the result of the try- and except blocks.
+
+
+# You're also able to throw errors or raise them in Python.
+x = "Kamran"
+y = 1
+
+if not type(y) is int:
+    raise TypeError("x is not an integer.")
+else:
+    print("Finally an integer!")
