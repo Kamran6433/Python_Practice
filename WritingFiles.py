@@ -7,6 +7,16 @@
 # "r" = read (default) | "r+" = read and write | "w" = write | "a" = append | "x" = create
 # "t" = Text mode (default) | "b" = Binary mode
 
-testFile = open("RandomTestFile.txt", "a")
-okay = input("Enter a name and random description to add to the file: ")
-testFile.write(okay + "\n")
+try:
+    testFile = open("RandomTestFile.txt", "a")
+    try:
+        okay = int(input("Enter random numbers to add to the file: "))
+    except ValueError as valueError:
+        print(valueError)
+    else:
+        testFile.write(str(okay) + "\n")
+        print(str(okay) + "Has been added to RandomTestFile.txt")
+    finally:
+        testFile.close()
+except:
+    print("something went wrong with opening RandomTestFile.txt")
