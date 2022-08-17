@@ -34,6 +34,16 @@ class ProgrammingLanguage:
         return self.difficulty, self.oop, self.curly_braces, self.do_i_like
 
 
+# I have created an emtpy object to see if I can make a default constructor
+# which creates an object with no values in it just like Java.
+class EmptyObject:
+    def __init__(self):
+        pass
+
+    def set_values(self, empty):
+        self.empty = empty
+
+
 car1 = Car("Chiron", "Bugatti", 2019, True)
 print(car1.name)
 print("Car modern? " + str(car1.is_modern()))
@@ -43,3 +53,7 @@ python = ProgrammingLanguage("Easy", True, False, True)
 python.changed_my_mind(False)
 print("Do I like this language? " + str(python.do_i_like))
 print(python.print_everything())
+
+nothing = EmptyObject()
+nothing.set_values(str(nothing) + "is completely empty")
+print(nothing.empty)
