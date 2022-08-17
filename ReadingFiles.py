@@ -1,5 +1,5 @@
-# Reading files in Python is easy and effective.
-# User is able to read any file in a computer using its absolute path.
+# Reading and writing files in Python is easy and effective.
+# User is able to read and write any file in a computer using its absolute path.
 # The open function is used to open a file by specifying the file name and the mode.
 
 # The modes are as follows:
