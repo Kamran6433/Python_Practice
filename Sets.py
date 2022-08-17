@@ -16,14 +16,27 @@ unionSet = mixedSet.union(exampleSet)
 print(unionSet)
 
 print("----------DIFFERENCE-----------")
-# This method will find the Difference between the first set / second set.
+# This method will find the Difference between the first set / second set or more sets.
 differenceSet = mixedSet.difference(exampleSet)
 print(differenceSet)
 
 print("----------INTERSECTION-----------")
-# This method will find the Difference between the first set / second set.
+# This method will find the similarities between the first set / second set.
 intersectionSet = mixedSet.intersection(exampleSet)
 print(intersectionSet)
+
+print("----------ISDISJOINT-----------")
+# This method returns whether two sets have an intersection or not.
+print(exampleSet.isdisjoint(mixedSet))
+
+print("----------ISSUBSET-----------")
+# This method returns whether another set contains this set or not.
+copyExampleSet = {1, 2, 8, 5, 1, 54}
+print(exampleSet.issubset(copyExampleSet))
+
+print("----------ISSUPERSET-----------")
+# This method returns whether this set contains another set or not.
+print(exampleSet.issuperset(copyExampleSet))
 
 print("----------UPDATE-----------")
 # This method will add items from another set into the set that the function is being called by.
@@ -32,3 +45,5 @@ print("----------UPDATE-----------")
 # WILL REMOVE DUPLICATES.
 mixedSet.update(exampleSet)
 print(mixedSet)
+
+# THE METHODS IN LISTS CAN ALSO BE DONE IN SETS (POP, UPDATE, REMOVE ETC.)
