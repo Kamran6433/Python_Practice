@@ -1,3 +1,4 @@
+import os
 # In Python you're able to create files and write to them as well. (Even HTML files)
 # Reading and writing files in Python is easy and effective.
 # User is able to read and write any file in a computer using its absolute path.
@@ -20,3 +21,12 @@ try:
         testFile.close()
 except:
     print("something went wrong with opening RandomTestFile.txt")
+
+
+# There is a way to delete files in Python, but first you must import OS.
+# Check if file exists, then delete it:
+
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+else:
+  print("The file does not exist")
