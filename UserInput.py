@@ -1,12 +1,12 @@
-value = input("Enter a random number between 1 and 10 (Im going to guess the final number you end up with): ")
+value = int(input("Enter a random number between 1 and 10 (Im going to guess the final number you end up with): "))
 
 print("Multiply your number by 9")
-second_value = int(value) * 9
+second_value = value * 9
 third_value = 0
 sum = 0
 
 print("Once you've multiplied it by 9, add the digits together e.g 73 = 7 + 3 = 10")
-while (int(second_value) > 0):
+while second_value > 0:
     third_value = second_value % 10
     sum = sum + third_value
     second_value = second_value / 10
