@@ -33,6 +33,10 @@ class Vehicle:
 class Car(Vehicle):
     def __init__(self, model, wheels, doors, engine, horsepower):
         super().__init__(model, wheels, doors, engine)
+        # To inherit you must use the super method to reference the parent and fill the constructor with
+        # the parent's attributes.
+        # You can then add the child's attributes above it.
+        # You don't need to use self.parents_attribute as it's inheriting the parent's attributes.
         self.horsepower = horsepower
 
 
