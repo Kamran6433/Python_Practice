@@ -32,36 +32,29 @@ class Vehicle:
 # CHILD CLASSES:
 class Car(Vehicle):
     def __init__(self, model, wheels, doors, engine, horsepower):
-        self.model = model
-        self.wheels = wheels
-        self.doors = doors
-        self.engine = engine
+        super().__init__(model, wheels, doors, engine)
         self.horsepower = horsepower
 
 
 class ElectricCar(Vehicle):
     def __init__(self, model, wheels, doors, engine, motor_power):
-        self.model = model
-        self.wheels = wheels
-        self.doors = doors
-        self.engine = engine
+        super().__init__(model, wheels, doors, engine)
         self.motor_power = motor_power
 
 
 class MotorCycle(Vehicle):
     def __init__(self, model, wheels, doors, engine, horsepower):
-        self.model = model
-        self.wheels = wheels
-        self.doors = doors
-        self.engine = engine
+        super().__init__(model, wheels, doors, engine)
         self.horsepower = horsepower
 
 
 class Titanic(Vehicle):
-    def __init__(self, model, wheels, doors, engine, weight):
-        self.model = model
-        self.wheels = wheels
-        self.doors = doors
-        self.engine = engine
-        self.weight = weight
-        
+    def __init__(self, model, wheels, doors, engine, weight_in_tonnes):
+        super().__init__(model, wheels, doors, engine)
+        self.weight_in_tonnes = weight_in_tonnes
+
+
+car = Car("Lamborghini", 4, 3, True, 600)
+electric_car = ElectricCar("Tesla", 4, 5, False, 700)
+motor_cycle = MotorCycle("Suzuki", 2, 0, True, 350)
+titanic = Titanic("Titanic", 0, 150, True, 5)
