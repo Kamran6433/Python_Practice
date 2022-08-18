@@ -10,20 +10,20 @@ class Vehicle:
         self.doors = doors
         self.engine = engine
 
-    def rev_engine(self, engine):
-        if engine:
+    def rev_engine(self):
+        if self.engine:
             print("The engine is revving!")
         else:
             print("This vehicle doesn't have an engine.")
 
-    def spin_wheel(self, wheels):
-        if wheels > 0:
+    def spin_wheel(self):
+        if self.wheels > 0:
             print("The wheels are spinning!")
         else:
             print("This vehicle has no wheels.")
 
-    def open_doors(self, doors):
-        if doors:
+    def open_doors(self):
+        if self.doors:
             print("The doors are all open!")
         else:
             print("This vehicle doesn't have doors.")
@@ -62,3 +62,8 @@ car = Car("Lamborghini", 4, 3, True, 600)
 electric_car = ElectricCar("Tesla", 4, 5, False, 700)
 motor_cycle = MotorCycle("Suzuki", 2, 0, True, 350)
 titanic = Titanic("Titanic", 0, 150, True, 5)
+
+car.rev_engine(), car.open_doors(), car.spin_wheel()
+electric_car.rev_engine(), electric_car.open_doors(), electric_car.spin_wheel()
+motor_cycle.rev_engine(), motor_cycle.open_doors(), motor_cycle.spin_wheel()
+titanic.rev_engine(), titanic.open_doors(), titanic.spin_wheel()
