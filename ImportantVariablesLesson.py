@@ -22,3 +22,11 @@ fav_fruits = ("Apple", "Mango", "Guava", "Pineapple", "Strawberry")
 print("green: " + green)
 print("tropic: " + str(tropic))
 print("red: " + red)
+
+mixed_list_of_lists = [[777.777, 999.999, 3.14], [15, 3, 2002], ["Nightcall", "Kavinsky"], [True, False, True]]
+
+list_of_floats, list_of_ints, list_of_strings, list_of_bools = mixed_list_of_lists
+print("list_of_floats: " + str(list_of_floats))
+print("list_of_ints: " + str(list_of_ints))
+print("list_of_strings: " + str(list_of_strings))
+print("list_of_bools: " + str(list_of_bools))
