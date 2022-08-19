@@ -1,6 +1,6 @@
 # Lists are a valuable data structure which can be easily mutated and changed for flexability.
 
-nums = [9, 87, 22, 213, 0, 99, 73]
+nums = [9, 87, 22, 213, 0, 99, 73, 9, 9]
 print(nums[0:]) # This colon simply means the rest.
 
 strings = ["Kamran", "Hello", "Attack On Titan"]
