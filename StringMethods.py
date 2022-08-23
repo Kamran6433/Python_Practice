@@ -49,8 +49,20 @@ print("Text: " + text)
 print(e)
 # This method encodes the string, using the specified encoding (default: UTF-8).
 
-count = "COUNT"
-print(count.center(60, "-"))
-d = text.count("a", 2, 5)
+endswith = "ENDSWITH"
+print(endswith.center(60, "-"))
+f = text.endswith(".")
 print("Text: " + text)
-print("count(): " + str(d))
+print("count(): " + str(f))
+# This method returns true if the string ends with the specified value, otherwise false.
+# The second argument is the position to start the search and the third argument is the position to end the search.
+
+find = "FIND"
+print(find.center(60, "-"))
+g = text.find("0", 10, 20)
+print("Text: " + text)
+print("count(): " + str(g))
+# This method finds the first occurrence of the specified value. The method returns -1 if the value is
+# not found. The method is almost the same as the index() method, the only difference is that the index() method
+# raises an exception if the value is not found.
+# The second argument is the position to start the search and the third argument is the position to end the search.
