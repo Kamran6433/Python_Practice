@@ -14,7 +14,6 @@
 # lstrip()	Returns a left trim version of the string
 # maketrans()	Returns a translation table to be used in translations
 # partition()	Returns a tuple where the string is parted into three parts
-# replace()	Returns a string where a specified value is replaced with a specified value
 # rjust()	Returns a right justified version of the string
 # rpartition()	Returns a tuple where the string is parted into three parts
 # rstrip()	Returns a right trim version of the string
@@ -28,7 +27,7 @@
 # This file contains all the string methods in Python. If I want to become a good programmer I must learn all the
 # string methods for each language as they are all important to mastering the language.
 
-text = "my name is, Kamran, and I will become a, Söftware Engineer specialising in AI."
+text = "#|my name is, Kamran, and I will become a, Söftware Engineer specialising in AI.[][##||"
 
 capitalize = "CAPITALIZE"
 print(capitalize.center(60, "-"))
@@ -160,3 +159,19 @@ print("replace(\",\"): " + str(o))
 # This method replaces a specified phrase with another specified phrase.
 # The first argument is the phrase you want to replace with the second argument.
 # The third argument is how many times you want it replaced.
+
+strip = "STRIP()"
+print(strip.center(60, "-"))
+p = text.strip("#][|")
+print("Text: " + text)
+print("strip(\"#][|\"): " + str(p))
+# This method removes any leading (spaces at the beginning) and trailing (spaces at the end)
+# characters (space is the default leading character to remove).
+
+lrstrip = "L + RSTRIP()"
+print(lrstrip.center(60, "-"))
+q = text.lstrip("#][|")
+r = text.rstrip("#][|")
+print("Text: " + text)
+print("lstrip(\"#][|\"): " + str(q))
+print("rstrip(\"#][|\"): " + str(r))
