@@ -1,22 +1,20 @@
-# isalnum()	Returns True if all characters in the string are alphanumeric
-# isalpha()	Returns True if all characters in the string are in the alphabet
-# isascii()	Returns True if all characters in the string are ascii characters
-# isdecimal()	Returns True if all characters in the string are decimals
-# isdigit()	Returns True if all characters in the string are digits
+# isalnum()	        Returns True if all characters in the string are alphanumeric
+# isalpha()	        Returns True if all characters in the string are in the alphabet
+# isascii()	        Returns True if all characters in the string are ascii characters
+# isdecimal()	    Returns True if all characters in the string are decimals
+# isdigit()	        Returns True if all characters in the string are digits
 # isidentifier()	Returns True if the string is an identifier
-# islower()	Returns True if all characters in the string are lower case
-# isnumeric()	Returns True if all characters in the string are numeric
-# isprintable()	Returns True if all characters in the string are printable
-# isspace()	Returns True if all characters in the string are whitespaces
-# istitle()	Returns True if the string follows the rules of a title
-# isupper()	Returns True if all characters in the string are upper case
-# ljust()	Returns a left justified version of the string
-# maketrans()	Returns a translation table to be used in translations
-# partition()	Returns a tuple where the string is parted into three parts
-# rjust()	Returns a right justified version of the string
-# rpartition()	Returns a tuple where the string is parted into three parts
-# translate()	Returns a translated string
-# zfill()	Fills the string with a specified number of 0 values at the beginning
+# islower()	        Returns True if all characters in the string are lower case
+# isnumeric()	    Returns True if all characters in the string are numeric
+# isprintable()	    Returns True if all characters in the string are printable
+# isspace()	        Returns True if all characters in the string are whitespaces
+# istitle()	        Returns True if the string follows the rules of a title
+# isupper()	        Returns True if all characters in the string are upper case
+# ljust()	        Returns a left justified version of the string
+# maketrans()	    Returns a translation table to be used in translations
+# rjust()	        Returns a right justified version of the string
+# rpartition()	    Returns a tuple where the string is parted into three parts
+# translate()	    Returns a translated string
 
 # This file contains all the string methods in Python. If I want to become a good programmer I must learn all the
 # string methods for each language as they are all important to mastering the language.
@@ -210,3 +208,24 @@ print("Text: " + text)
 print("title(): " + t)
 print()
 # This method returns a string where the first character in every word is upper case.
+
+zfill = "ZFILL()"
+print(zfill.center(60, "-"))
+u = text.zfill(100)
+print("Text: " + text)
+print("zfill(): " + u)
+print()
+# This method adds zeros (0) at the beginning of the string, until it reaches the specified length.
+
+partition = "PARTITION()"
+print(partition.center(60, "-"))
+v = text.partition("in")
+print("Text: " + text)
+print("partition(\"i\"): " + str(v))
+print()
+# This method searches for a specified string and splits the string into a tuple containing:
+# Search for the word "in", and return a tuple with three elements:
+#
+# 1 - everything before "in"
+# 2 - "in"
+# 3 - everything after "in"
