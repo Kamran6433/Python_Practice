@@ -11,28 +11,24 @@
 # istitle()	Returns True if the string follows the rules of a title
 # isupper()	Returns True if all characters in the string are upper case
 # ljust()	Returns a left justified version of the string
-# lower()	Converts a string into lower case
 # lstrip()	Returns a left trim version of the string
 # maketrans()	Returns a translation table to be used in translations
 # partition()	Returns a tuple where the string is parted into three parts
 # replace()	Returns a string where a specified value is replaced with a specified value
 # rjust()	Returns a right justified version of the string
 # rpartition()	Returns a tuple where the string is parted into three parts
-# rsplit()	Splits the string at the specified separator, and returns a list
 # rstrip()	Returns a right trim version of the string
-# split()	Splits the string at the specified separator, and returns a list
 # splitlines()	Splits the string at line breaks and returns a list
 # strip()	Returns a trimmed version of the string
 # swapcase()	Swaps cases, lower case becomes upper case and vice versa
 # title()	Converts the first character of each word to upper case
 # translate()	Returns a translated string
-# upper()	Converts a string into upper case
 # zfill()	Fills the string with a specified number of 0 values at the beginning
 
 # This file contains all the string methods in Python. If I want to become a good programmer I must learn all the
 # string methods for each language as they are all important to mastering the language.
 
-text = "my name is Kamran and I will become a Söftware Engineer specialising in AI."
+text = "my name is, Kamran, and I will become a, Söftware Engineer specialising in AI."
 
 capitalize = "CAPITALIZE"
 print(capitalize.center(60, "-"))
@@ -137,3 +133,30 @@ l = text.upper()
 print("Text: " + text)
 print("upper(): " + l)
 # This method returns a string where all the characters are upper case.
+
+split = "SPLIT()"
+print(split.center(60, "-"))
+m = text.split(",", 5)
+print("Text: " + text)
+print("split(\",\", 5): " + str(m))
+# This method splits a string into a list.
+# You can specify the separator, default separator is any whitespace.
+# You can also specify how many lists you want (maxsplit).
+
+rsplit = "RSPLIT()"
+print(rsplit.center(60, "-"))
+n = text.rsplit(",", 5)
+print("Text: " + text)
+print("rsplit(\",\", 5): " + str(n))
+# This method splits a string into a list, starting from the right.
+# You can specify the separator, default separator is any whitespace.
+# You can also specify how many lists you want (maxsplit).
+
+replace = "REPLACE()"
+print(replace.center(60, "-"))
+o = text.replace(",", " HAHAHAH ", 2)
+print("Text: " + text)
+print("replace(\",\"): " + str(o))
+# This method replaces a specified phrase with another specified phrase.
+# The first argument is the phrase you want to replace with the second argument.
+# The third argument is how many times you want it replaced.
