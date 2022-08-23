@@ -10,15 +10,12 @@
 # isspace()	Returns True if all characters in the string are whitespaces
 # istitle()	Returns True if the string follows the rules of a title
 # isupper()	Returns True if all characters in the string are upper case
-# join()	Converts the elements of an iterable into a string
 # ljust()	Returns a left justified version of the string
 # lower()	Converts a string into lower case
 # lstrip()	Returns a left trim version of the string
 # maketrans()	Returns a translation table to be used in translations
 # partition()	Returns a tuple where the string is parted into three parts
 # replace()	Returns a string where a specified value is replaced with a specified value
-# rfind()	Searches the string for a specified value and returns the last position of where it was found
-# rindex()	Searches the string for a specified value and returns the last position of where it was found
 # rjust()	Returns a right justified version of the string
 # rpartition()	Returns a tuple where the string is parted into three parts
 # rsplit()	Splits the string at the specified separator, and returns a list
@@ -31,10 +28,11 @@
 # translate()	Returns a translated string
 # upper()	Converts a string into upper case
 # zfill()	Fills the string with a specified number of 0 values at the beginning
-# This file contains all teh string methods in Python. If I want to become a good programmer I must learn all the
+
+# This file contains all the string methods in Python. If I want to become a good programmer I must learn all the
 # string methods for each language as they are all important to mastering the language.
 
-text = "my name is Kamran and I will become a Söftware Engineer."
+text = "my name is Kamran and I will become a Söftware Engineer specialising in AI."
 
 capitalize = "CAPITALIZE"
 print(capitalize.center(60, "-"))
@@ -92,19 +90,50 @@ print("endswith(\".\"): " + str(f))
 
 startswith = "STARTSWITH()"
 print(startswith.center(60, "-"))
-f = text.startswith("my")
+g = text.startswith("my")
 print("Text: " + text)
-print("startswith(\"my\"): " + str(f))
+print("startswith(\"my\"): " + str(g))
 # This method returns true if the string starts with the specified value, otherwise false.
 # The second argument is the position to start the search and the third argument is the position to end the search.
 
 find = "FIND()"
 print(find.center(60, "-"))
-g = text.find("0", 10, 20)
+h = text.find("a", 10, 20)
 print("Text: " + text)
-print("find(\"0\", 10, 20): " + str(g))
+print("find(\"0\", 10, 20): " + str(h))
 # This method finds the first occurrence of the specified value. The method returns -1 if the value is
 # not found. The method is almost the same as the index() method, the only difference is that the index() method
 # raises an exception if the value is not found.
 # The second argument is the position to start the search and the third argument is the position to end the search.
 
+rfind = "RFIND()"
+print(rfind.center(60, "-"))
+i = text.rfind("a", 10, 20)
+print("Text: " + text)
+print("rfind(\"0\", 10, 20): " + str(i))
+# This method finds the last occurrence of the specified value. The method returns -1 if the value is
+# not found. The method is almost the same as the index() method, the only difference is that the index() method
+# raises an exception if the value is not found.
+# The second argument is the position to start the search and the third argument is the position to end the search.
+
+myTuple = ("Kamran", "Is", "Excellent")
+join = "JOIN()"
+print(join.center(60, "-"))
+j = "#".join(myTuple)
+print("Text: " + text)
+print("\"#\".join(myTuple): " + j)
+# This method takes all items in an iterable (List, Tuple, Set, Dictionary) and joins them into one string.
+
+lower = "LOWER()"
+print(lower.center(60, "-"))
+k = text.lower()
+print("Text: " + text)
+print("lower(): " + k)
+# This method returns a string where all the characters are lower case.
+
+upper = "UPPER()"
+print(upper.center(60, "-"))
+l = text.upper()
+print("Text: " + text)
+print("upper(): " + l)
+# This method returns a string where all the characters are upper case.
